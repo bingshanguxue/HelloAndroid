@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnNotificationAccess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:text="Open Notification Access"/>
+
+    <Button
+        android:id="@+id/btnCreateNotify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnNotificationAccess"
+        android:layout_alignRight="@+id/btnNotificationAccess"
+        android:layout_below="@+id/btnNotificationAccess"
+        android:text="Create Notification"/>
+
+    <Button
+        android:id="@+id/btnClearNotify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnCreateNotify"
+        android:layout_alignRight="@+id/btnCreateNotify"
+        android:layout_below="@+id/btnCreateNotify"
+        android:text="Clear All Notification"/>
+
+    <Button
+        android:id="@+id/btnListNotify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnClearNotify"
+        android:layout_alignRight="@+id/btnClearNotify"
+        android:layout_below="@+id/btnClearNotify"
+        android:text="List of Notification"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/btnListNotify"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/btnListNotify"
+        android:layout_below="@+id/btnListNotify">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NotificationListenerService Example"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+
+    </ScrollView>
+
+</RelativeLayout>
